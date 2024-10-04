@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Samples</title>
+        <style>
+            
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+            margin-left: 2rem;
+        }
+        header {
+          padding-top: 0.5rem;
+          height: 5rem;
+        }
+        .sample {
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 1.2rem;
+            width: max(60vw, 60rem);
+            border-bottom: 2px solid #aaa;
+            padding: 0.5rem 0 0.5rem 0;
+          }
+        .audio-wrapper {
+            display: flex;               
+            align-items: center;
+            justify-content: space-between;
+            width: 60rem;
+            flex-wrap: wrap;
+        }
+        .audio-wrapper label {
+            display: inline-block;         
+            width: 3.5rem;
+        }
+        .audio-row {
+            display: flex;
+            align-items: center;
+        }
+        audio {
+            height: 2rem;
+            width: 22rem;
+            margin-right: 1rem;
+        }
+        .text-arabic {
+            font-size: 1.6rem;
+            margin: 0.5rem;
+         }
+        .row-title {
+            width: 6rem;
+         }
+    
+        </style>
+        
+    </head>
+    <body>
+    <h1>Test sample</h1>
+    <div class="sample">
+      <audio src="./wave.wav" controls></audio>
+      <div class="text-arabic" dir="ltr">
+        لَو عِنْدَك أَيّ اِسْتِفْسار أَو مُشْكِلَة ، مُمْكِن تَتَواصَل مَع خِدْمَة العُمَلاء
+      </div>      
+      law Eindak &lt;ayy istifsaar &lt;aw mu$kila  mumkin tatawaaSal maE xidma lEumalaa&lt;
+    </div>
+    <h2>Spectrogram</h2>
+    <img src="./mel_spec.png" alt="" />
+    <script>
+      const audioOutputs = document.querySelectorAll('audio');
+      audioOutputs.forEach(a => a.volume = 0.42);
+    </script>
+    </body>
+    </html>
+    

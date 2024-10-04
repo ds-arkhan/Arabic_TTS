@@ -1,0 +1,21 @@
+
+# restore_model: ''
+restore_model: ./pretrained/tacotron2_ar_adv.pth
+# restore_model: ./checkpoints/exp0/states.pth
+
+log_dir: logs/uae
+checkpoint_dir: checkpoints/uae
+
+train_wavs_path: D:/Arabic-TTS/Dataset/Egyptian_Dataset/Egyptian_Dataset_Train/
+train_labels: D:/Arabic-TTS/Dataset/Egyptian_Dataset/train_egy_phon.txt
+
+test_wavs_path: D:/Arabic-TTS/Dataset/Egyptian_Dataset/Egyptian_Dataset_Val/
+test_labels: D:/Arabic-TTS/Dataset/Egyptian_Dataset/val_egy_phon.txt
+
+balanced_sampling: False
+sampler_weights_file: ./data/sampler/sampler_weights
+
+cache_dataset: False
+
+n_save_states_iter: 50
+n_save_backup_iter: 1100
