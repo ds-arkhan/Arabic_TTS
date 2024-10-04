@@ -1,15 +1,6 @@
-# TTS-EgyptianArabic-Tacotron2
+# TTS-Arabic
 
-TTS models (Tacotron2), trained on EGYARA dataset from MASRY TTS paper including the [HiFi-GAN vocoder](https://github.com/jik876/hifi-gan) for direct TTS inference.
-
-
-Papers:
-
-Tacotron2 | Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions ([arXiv](https://arxiv.org/abs/1712.05884))
-
-MASRY TTS | Masry: A Text-to-Speech System for the Egyptian Arabic ([SCITEPRESS](https://www.scitepress.org/Documents/2023/122443/))
-
-HiFi-GAN  | HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis ([arXiv](https://arxiv.org/abs/2010.05646))
+TTS model, trained on for direct TTS inference.
 
 
 ## Quick Setup
@@ -23,7 +14,6 @@ Required packages:
 
 Download the pretrained weights for the Tacotron2 model for Egyptian Arabic (https://drive.google.com/file/d/1etruUB2hNsYfvn5_zsDrQM6uVJW62u8u/view?usp=drive_link) then put it in pretrained folder
 
-We used a diacritization model from Camel Tools (https://github.com/CAMeL-Lab/camel_tools) to diacritize Egyptian Arabic.
 
 Download the [HiFi-GAN vocoder](https://github.com/jik876/hifi-gan) weights ([link](https://drive.google.com/u/0/uc?id=1zSYYnJFS-gQox-IeI71hVY-fdPysxuFK&export=download)). Either put them into `pretrained/hifigan-asc-v1` or edit the following lines in `configs/basic.yaml`.
 
